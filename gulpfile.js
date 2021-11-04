@@ -5,17 +5,12 @@ const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const terser = require('gulp-terser');
-const Fiber = require('fibers');
 const browsersync = require('browser-sync').create();
 
 // Sass Task
 function scssTask() {
 	return src('app/scss/style.scss', { sourcemaps: true })
-		.pipe(
-			sass({
-				fiber: Fiber,
-			})
-		)
+		.pipe(sass())
 		.pipe(postcss([autoprefixer(), cssnano()]))
 		.pipe(dest('dist', { sourcemaps: '.' }));
 }
