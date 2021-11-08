@@ -1,0 +1,11 @@
+@use 'utility' as *;
+
+.button {
+	color: var(--white);
+	border: none;
+	padding: 0.8rem 3rem;
+	border-radius: 2.2rem;
+	font-size: 1.4rem;
+	font-weight: 700;
+	background-image: linear-gradient(to right bottom, var(--green), var(--lightBlue));
+}

@@ -1,0 +1,22 @@
+@use 'utility' as *;
+
+.nav {
+	display: flex;
+	align-items: center;
+	position: relative;
+	justify-content: space-between;
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__link {
+		text-decoration: none;
+	}
+
+	&__button {
+		display: none;
+	}
+}
