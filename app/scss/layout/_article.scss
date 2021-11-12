@@ -1,0 +1,42 @@
+@use 'utility' as *;
+
+.article {
+	padding: 8.8rem 0;
+	// font-family: var(--font-public);
+
+	&__container {
+		display: grid;
+		row-gap: 2.4rem;
+	}
+
+	&__content {
+		background-color: var(--white);
+		border-radius: 5px;
+	}
+
+	&__heading {
+		margin-bottom: 3rem;
+	}
+
+	&__img {
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+	}
+
+	&__text {
+		padding: 2.4rem 3rem;
+		display: flex;
+		flex-direction: column;
+		row-gap: 0.8rem;
+	}
+
+	&__author {
+		font-size: 1rem;
+		font-weight: 400;
+		color: var(--gray);
+	}
+
+	&__description {
+		font-weight: 400;
+	}
+}
