@@ -15,4 +15,12 @@ body {
 	@include breakpoint(medium) {
 		max-width: 70rem;
 	}
+
+	@include breakpoint(large) {
+		max-width: 90rem;
+	}
+
+	@include breakpoint(xlarge) {
+		max-width: 110rem;
+	}
 }
