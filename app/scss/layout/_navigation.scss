@@ -1,1 +1,34 @@
 @use 'utility' as *;
+
+.nav {
+	display: flex;
+	height: 6.4rem;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+
+	&__menu {
+		width: 100%;
+		position: absolute;
+		top: -30rem;
+		padding: 3.2rem 0;
+		background-color: var(--white);
+		border-radius: 4px;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		row-gap: 2.4rem;
+	}
+
+	&__link {
+		color: var(--blue);
+		text-decoration: none;
+	}
+
+	&__close {
+		display: none;
+	}
+}

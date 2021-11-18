@@ -1,1 +1,37 @@
 @use 'utility' as *;
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.8rem;
+	font-family: var(--font-public);
+}
+
+.heading-primary {
+	@include fontStyle;
+	font-size: 4rem;
+	line-height: 1.2;
+}
+
+.heading-secondary {
+	@include fontStyle;
+	font-size: 3.2rem;
+	text-align: center;
+}
+
+.heading-tertiary {
+	@include fontStyle;
+	font-size: 2rem;
+}
+
+.heading-fourth {
+	@include fontStyle;
+	font-size: 1.6rem;
+}
+
+.description {
+	color: var(--gray);
+	font-size: 1.5rem;
+}

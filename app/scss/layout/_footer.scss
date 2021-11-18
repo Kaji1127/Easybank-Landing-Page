@@ -1,1 +1,48 @@
 @use 'utility' as *;
+
+.footer {
+	padding: 4rem 0;
+	background-color: var(--blue);
+
+	&__container {
+		display: grid;
+		row-gap: 3.2rem;
+	}
+
+	&__logo {
+		display: block;
+
+		&-img {
+			margin: 0 auto;
+		}
+	}
+
+	&__share {
+		display: flex;
+		justify-content: center;
+		column-gap: 1.6rem;
+	}
+
+	&__nav-list {
+		display: grid;
+		justify-items: center;
+		row-gap: 0.8rem;
+		font-size: 1.5rem;
+	}
+
+	&__nav-link {
+		color: var(--white);
+		text-decoration: none;
+	}
+
+	&__button {
+		justify-self: center;
+	}
+
+	&__copyright {
+		text-align: center;
+		margin-top: 2.4rem;
+		color: var(--white);
+		font-size: 1.5rem;
+	}
+}

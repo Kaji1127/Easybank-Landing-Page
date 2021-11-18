@@ -1,1 +1,53 @@
 @use 'utility' as *;
+
+.article {
+	padding: 8.8rem 0;
+
+	&__heading {
+		margin-bottom: 3rem;
+	}
+
+	&__container {
+		display: grid;
+		row-gap: 2.4rem;
+
+		@include breakpoint(medium) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	&__content {
+		display: grid;
+		grid-template-rows: 20rem auto;
+		border-radius: 5px;
+
+		@include breakpoint(small) {
+			grid-template-rows: 24rem auto;
+		}
+	}
+
+	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+	}
+
+	&__inner {
+		padding: 2.4rem 3rem;
+		display: flex;
+		flex-direction: column;
+		row-gap: 0.8rem;
+		background-color: var(--white);
+	}
+
+	&__description {
+		font-size: 1.3rem;
+	}
+
+	&__author {
+		font-size: 1rem;
+		color: var(--gray);
+	}
+}

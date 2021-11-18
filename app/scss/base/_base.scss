@@ -1,1 +1,18 @@
 @use 'utility' as *;
+
+body {
+	background-color: var(--darkWhite);
+}
+.container {
+	max-width: 32.7rem;
+	width: 100%;
+	margin: 0 auto;
+
+	@include breakpoint(small) {
+		max-width: 54rem;
+	}
+
+	@include breakpoint(medium) {
+		max-width: 70rem;
+	}
+}
