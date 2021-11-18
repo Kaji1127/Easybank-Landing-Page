@@ -2,9 +2,18 @@
 
 .hero {
 	display: flex;
-	flex-direction: column;
-	row-gap: 4rem;
+	flex-direction: column-reverse;
 	padding-bottom: 8.8rem;
+	row-gap: 4rem;
+
+	@include breakpoint(large) {
+		margin-top: 8rem;
+		padding-bottom: 0;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		// column-gap: 10rem;
+	}
 
 	&__img-content {
 		background-image: url('../images/bg-intro-mobile.svg');
@@ -12,34 +21,76 @@
 		background-size: cover;
 		position: relative;
 		height: 34.5rem;
+		margin: 0 calc(50% - 50vw);
+		width: 100vw;
 
 		@include breakpoint(small) {
-			height: 50rem;
+			height: 56rem;
 			background-position: center center;
 		}
 
 		@include breakpoint(medium) {
 			height: 65rem;
 		}
+
+		@include breakpoint(large) {
+			overflow-x: clip;
+			background-image: url('../images/bg-intro-desktop.svg');
+			width: 70%;
+			height: 60rem;
+			background-position: -6rem 50%;
+			background-size: 200%;
+		}
+
+		@include breakpoint(xlarge) {
+			height: 76.5rem;
+			background-position: -6rem 50%;
+			background-size: 200%;
+		}
 	}
 
 	&__img {
 		position: absolute;
-		top: -5.4rem;
+		top: -5rem;
 		left: 50%;
 		transform: translateX(-50%);
+		object-fit: cover;
+		height: 120%;
 
 		@include breakpoint(small) {
 			top: -13rem;
 		}
 
 		@include breakpoint(medium) {
-			top: -19rem;
+			top: -17rem;
+		}
+
+		@include breakpoint(large) {
+			transform: none;
+			left: auto;
+			right: -10rem;
+			height: 130%;
+			top: -10rem;
+			width: 100%;
+		}
+
+		@include breakpoint(xlarge) {
+			right: -10rem;
+			height: 130%;
+		}
+
+		@include breakpoint(xlarge) {
+			height: 130%;
+			top: -14rem;
+			right: -12rem;
 		}
 	}
 
 	&__text-content {
 		text-align: center;
+		@include breakpoint(large) {
+			width: 35%;
+		}
 	}
 
 	&__title {

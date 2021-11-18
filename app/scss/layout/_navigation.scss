@@ -7,6 +7,10 @@
 	align-items: center;
 	position: relative;
 
+	@include breakpoint(medium) {
+		height: 8rem;
+	}
+
 	&__menu {
 		width: 100%;
 		position: absolute;
@@ -14,6 +18,13 @@
 		padding: 3.2rem 0;
 		background-color: var(--white);
 		border-radius: 4px;
+
+		@include breakpoint(medium) {
+			position: static;
+			top: 0;
+			padding: 0;
+			width: auto;
+		}
 	}
 
 	&__list {
@@ -21,6 +32,12 @@
 		flex-direction: column;
 		align-items: center;
 		row-gap: 2.4rem;
+
+		@include breakpoint(medium) {
+			flex-direction: row;
+			column-gap: 2rem;
+			font-size: 1.4rem;
+		}
 	}
 
 	&__link {
@@ -28,7 +45,21 @@
 		text-decoration: none;
 	}
 
+	&__toggle {
+		@include breakpoint(medium) {
+			display: none;
+		}
+	}
+
 	&__close {
 		display: none;
+	}
+
+	&__button {
+		display: none;
+
+		@include breakpoint(medium) {
+			display: block;
+		}
 	}
 }
