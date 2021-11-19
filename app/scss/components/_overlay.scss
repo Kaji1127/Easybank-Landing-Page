@@ -1,0 +1,17 @@
+@use 'utility' as *;
+
+.overlay {
+	@include brekpoint-down(medium) {
+		position: absolute;
+		top: 6.4rem;
+		z-index: 10;
+		width: 100%;
+		height: calc(100vh - 6.4rem);
+		background-image: linear-gradient(to bottom, var(--blue), transparent);
+		display: none;
+
+		&.show {
+			display: block;
+		}
+	}
+}
