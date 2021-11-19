@@ -7,6 +7,13 @@
 	&__container {
 		display: grid;
 		row-gap: 3.2rem;
+
+		@include breakpoint(large) {
+			grid-template-columns: repeat(2, max-content) auto;
+			grid-template-rows: repeat(3, 2.6rem);
+			row-gap: 0;
+			column-gap: 13rem;
+		}
 	}
 
 	&__logo {
@@ -14,6 +21,10 @@
 
 		&-img {
 			margin: 0 auto;
+
+			@include breakpoint(large) {
+				margin: 0;
+			}
 		}
 	}
 
@@ -21,6 +32,12 @@
 		display: flex;
 		justify-content: center;
 		column-gap: 1.6rem;
+
+		@include breakpoint(large) {
+			grid-row: 3 / 4;
+			align-self: end;
+			justify-content: flex-start;
+		}
 	}
 
 	&__nav-list {
@@ -28,6 +45,18 @@
 		justify-items: center;
 		row-gap: 0.8rem;
 		font-size: 1.5rem;
+
+		@include breakpoint(large) {
+			grid-template-columns: repeat(2, 1fr);
+			column-gap: 10rem;
+			grid-row: 1 / 4;
+			justify-items: start;
+		}
+	}
+
+	&__nav-item {
+		@include breakpoint(large) {
+		}
 	}
 
 	&__nav-link {
@@ -41,8 +70,24 @@
 
 	&__copyright {
 		text-align: center;
-		margin-top: 2.4rem;
 		color: var(--white);
-		font-size: 1.5rem;
+		margin-top: 0.8rem;
+
+		@include breakpoint(large) {
+			grid-row: 1 / 4;
+			justify-self: end;
+			margin-top: 0;
+			text-align: right;
+		}
+	}
+}
+
+.copyright {
+	display: block;
+	margin-top: 2.4rem;
+	font-size: 1.5rem;
+
+	@include breakpoint(large) {
+		margin-top: 1.4rem;
 	}
 }

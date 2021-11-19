@@ -5,8 +5,11 @@
 	background-color: var(--darkGray);
 
 	&__title-content {
-		text-align: center;
 		margin-bottom: 5.6rem;
+
+		@include breakpoint(large) {
+			width: 60rem;
+		}
 	}
 
 	&__heading {
@@ -20,6 +23,11 @@
 		@include breakpoint(medium) {
 			grid-template-columns: repeat(2, 1fr);
 		}
+
+		@include breakpoint(large) {
+			grid-template-columns: repeat(4, 1fr);
+			column-gap: 3rem;
+		}
 	}
 
 	&__content {
@@ -28,6 +36,11 @@
 		align-items: center;
 		text-align: center;
 		row-gap: 1.6rem;
+
+		@include breakpoint(large) {
+			align-items: flex-start;
+			text-align: left;
+		}
 	}
 
 	&__img {

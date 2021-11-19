@@ -13,17 +13,34 @@ body {
 	@include fontStyle;
 	font-size: 4rem;
 	line-height: 1.2;
+
+	@include breakpoint(large) {
+		font-size: 4.8rem;
+	}
+
+	@include breakpoint(xlarge) {
+		font-size: 5.6rem;
+	}
 }
 
 .heading-secondary {
 	@include fontStyle;
 	font-size: 3.2rem;
 	text-align: center;
+
+	@include breakpoint(large) {
+		font-size: 3.6rem;
+		text-align: left;
+	}
 }
 
 .heading-tertiary {
 	@include fontStyle;
 	font-size: 2rem;
+
+	@include breakpoint(large) {
+		font-size: 2.4rem;
+	}
 }
 
 .heading-fourth {
@@ -34,4 +51,8 @@ body {
 .description {
 	color: var(--gray);
 	font-size: 1.5rem;
+
+	@include breakpoint(large) {
+		font-size: 1.6rem;
+	}
 }

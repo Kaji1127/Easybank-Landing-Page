@@ -18,12 +18,21 @@
 		padding: 3.2rem 0;
 		background-color: var(--white);
 		border-radius: 4px;
+		transition: all 0.4s;
+
+		&.show {
+			transition: all 0.4s;
+			top: 8.8rem;
+		}
 
 		@include breakpoint(medium) {
 			position: static;
 			top: 0;
 			padding: 0;
 			width: auto;
+			display: flex;
+			align-items: center;
+			height: 8rem;
 		}
 	}
 
@@ -37,15 +46,53 @@
 			flex-direction: row;
 			column-gap: 2rem;
 			font-size: 1.4rem;
+			height: 100%;
+		}
+
+		@include breakpoint(large) {
+			column-gap: 3rem;
+		}
+	}
+
+	&__item {
+		@include breakpoint(medium) {
+			height: 100%;
+			padding: 3.2rem 0 2.8rem;
+			position: relative;
+
+			&::after {
+				position: absolute;
+				bottom: 0;
+				transition: all 0.4s;
+				content: '';
+				display: block;
+				width: 0;
+				height: 4px;
+				background-image: linear-gradient(to right bottom, var(--green), var(--lightBlue));
+			}
+
+			&:hover {
+				&::after {
+					width: 100%;
+				}
+			}
 		}
 	}
 
 	&__link {
 		color: var(--blue);
 		text-decoration: none;
+		display: block;
+
+		@include breakpoint(medium) {
+			transition: all 0.4s;
+			color: var(--gray);
+			// margin-bottom: 2.4rem;
+		}
 	}
 
 	&__toggle {
+		cursor: pointer;
 		@include breakpoint(medium) {
 			display: none;
 		}

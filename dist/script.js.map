@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"script.js"}
+{"version":3,"sources":["script.js"],"names":["navToggle","document","querySelector","navMenu","navClose","overlay","addEventListener","classList","contains","remove","add"],"mappings":"AACA,MAAMA,UAAYC,SAASC,cAAc,gBACnCC,QAAUF,SAASC,cAAc,cACjCE,SAAWH,SAASC,cAAc,eAClCG,QAAUJ,SAASC,cAAc,YAEvCF,UAAUM,iBAAiB,SAAS,KAC9BH,QAAQI,UAAUC,SAAS,SAI/BL,QAAQI,UAAUE,OAAO,QACzBJ,QAAQE,UAAUE,OAAO,UAJzBN,QAAQI,UAAUG,IAAI,QACtBL,QAAQE,UAAUG,IAAI","file":"script.js"}

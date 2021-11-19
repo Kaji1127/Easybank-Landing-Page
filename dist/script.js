@@ -1,2 +1,2 @@
-
+const navToggle=document.querySelector("#nav__toggle"),navMenu=document.querySelector(".nav__menu"),navClose=document.querySelector(".nav__close"),overlay=document.querySelector(".overlay");navToggle.addEventListener("click",(()=>{navMenu.classList.contains("show")?(navMenu.classList.remove("show"),overlay.classList.remove("show")):(navMenu.classList.add("show"),overlay.classList.add("show"))}));
 //# sourceMappingURL=script.js.map

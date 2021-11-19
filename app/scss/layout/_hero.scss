@@ -36,9 +36,9 @@
 		@include breakpoint(large) {
 			overflow-x: clip;
 			background-image: url('../images/bg-intro-desktop.svg');
-			width: 70%;
+			width: 69%;
 			height: 60rem;
-			background-position: -6rem 50%;
+			background-position: -2rem 50%;
 			background-size: 200%;
 		}
 
@@ -61,10 +61,6 @@
 			top: -13rem;
 		}
 
-		@include breakpoint(medium) {
-			top: -17rem;
-		}
-
 		@include breakpoint(large) {
 			transform: none;
 			left: auto;
@@ -75,21 +71,17 @@
 		}
 
 		@include breakpoint(xlarge) {
-			right: -10rem;
-			height: 130%;
-		}
-
-		@include breakpoint(xlarge) {
-			height: 130%;
-			top: -14rem;
-			right: -12rem;
+			height: 118%;
+			top: -8rem;
+			right: -8rem;
 		}
 	}
 
 	&__text-content {
 		text-align: center;
 		@include breakpoint(large) {
-			width: 35%;
+			width: 42%;
+			text-align: left;
 		}
 	}
 

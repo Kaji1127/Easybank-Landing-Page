@@ -24,3 +24,28 @@ body {
 		max-width: 110rem;
 	}
 }
+
+.hover-blue {
+	&:hover {
+		.nav__link {
+			color: var(--blue);
+		}
+	}
+}
+
+.hover-green {
+	cursor: pointer;
+	transition: all 0.2s;
+
+	& path {
+		transition: fill 0.4s;
+	}
+
+	&:hover {
+		color: var(--lightGreen);
+
+		& path {
+			fill: var(--lightGreen);
+		}
+	}
+}

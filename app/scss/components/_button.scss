@@ -7,4 +7,10 @@
 	padding: 1rem 3.4rem;
 	border: none;
 	font-weight: 700;
+	cursor: pointer;
+	transition: opacity 0.4s;
+
+	&:hover {
+		opacity: 0.8;
+	}
 }
