@@ -24,7 +24,7 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
 
 ### スクリーンショット
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### リンク
 
